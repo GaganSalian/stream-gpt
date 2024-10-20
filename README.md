@@ -8,10 +8,9 @@
 -Login/Signup
     -sign In/Sign up Form
     -redirect to browse page
--browser
-    -header
-      ....
-      -Main-movie
+-browser(after authentication)
+    -Header
+    -Main-movie
             -trailer  in background
             -taitle & Description
             -Moviesuggestion
