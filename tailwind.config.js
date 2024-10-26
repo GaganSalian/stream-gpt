@@ -6,5 +6,19 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+          '-webkit-overflow-scrolling': 'touch',
+          'scrollbar-width': 'none',  /* For Firefox */
+          '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
+          '&::-webkit-scrollbar': {
+            display: 'none',  /* For Chrome, Safari, Opera */
+          },
+        },
+      });
+    },
+  ],
 }
