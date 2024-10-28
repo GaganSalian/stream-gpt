@@ -69,9 +69,9 @@ const Login = () => {
     <div>
       <Header />
       <div className='absolute'>
-        <img src={BG_URL} alt='background' />
+        <img className='h-screen md:h-auto object-cover' src={BG_URL} alt='background' />
       </div>
-      <form onSubmit={(e) => e.preventDefault()} className='w-4/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-gray-300 bg-opacity-80'>
+      <form onSubmit={(e) => e.preventDefault()} className='w-full md:w-4/12 absolute p-12 bg-black my-0 md:my-36 mx-auto right-0 left-0 text-gray-300 bg-opacity-80'>
         <h1 className='font-bold text-3xl py-6'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
 
         {!isSignInForm && (
@@ -83,11 +83,11 @@ const Login = () => {
 
         <p className='text-red-500 font-bold text-lg py-2'>{errormessage}</p>
 
-        <button className='p-4 my-2 bg-red-600 w-full rounded-md' onClick={handleButtonClick}>
+        <button className='p-4  my-0 md:my-2 bg-red-600 w-full rounded-md' onClick={handleButtonClick}>
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
 
-        <p className='p-6 cursor-pointer' onClick={toggleSignInForm}>
+        <p className='p-3 md:p-6 cursor-pointer' onClick={toggleSignInForm}>
           {isSignInForm ? "New to Netflix? Sign up now" : "Already registered? Sign In Now..."}
         </p>
       </form>
