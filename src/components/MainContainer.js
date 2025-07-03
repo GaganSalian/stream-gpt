@@ -12,6 +12,7 @@ const MainContainer = () => {
     if(!movies)return;
 
     const mainMovie=movies[0];
+    // console.log("TMDB Key:", process.env.REACT_APP_TMDB_KEY);
     //console.log(mainMovie );
 
     const  {original_title,overview,id}=mainMovie;
