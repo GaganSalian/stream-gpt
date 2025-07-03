@@ -22,4 +22,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "tulu", name: "Tulu" }
 ];
 
-export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY; // Environment variable for OpenAI key
+// export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY; // Environment variable for OpenAI key
